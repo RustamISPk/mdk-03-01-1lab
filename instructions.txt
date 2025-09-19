@@ -1,0 +1,14 @@
+This is an exercise to illustrate how you go about writing code and solving problems. We will discuss your solution during your technical interview.
+
+Write a script that will read in the included CSV file "input.csv", manipulate the data, and produce the included file "output.json" as output.
+
+You are allowed to use any resources, websites, libraries, etc. that you need to accomplish this task.
+
+Requirements:
+ * Write in TypeScript
+ * Run with Node
+ * Provide instructions to execute your code
+
+Please reach out if you have any questions or need clarification on implementation or requirements.
+
+Code can be submitted via email, GitHub repo, or online code editor (Replit, CodeSandbox, etc).
