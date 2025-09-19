@@ -4,7 +4,7 @@ import { formatDate, calculateAge } from './utils/dateTime'
 import Person from './types/person'
 import Relative from './types/relative'
 import CsvData from './types/csvData'
-
+// комментарий, по хорошему прогу переписать, добавить обработку разных разграничителей и обработку не только родословной, но и любых других данных
 // Relationship map to dynamically extract/set relative relations
 const RELATION_MAP: Record<string, string> = {
   Father: 'Father',
