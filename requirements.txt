@@ -1,0 +1,40 @@
+csvToJson Design Document
+
+IX - Info
+RX - Requirement
+
+I0 Input .csv format
+    - Name
+    - Birthday
+    - Died
+    - Father
+    - Mother
+    - Brother
+    - Sister
+R0 The software shall read input in .csv format and output in .json format
+R1 The software shall throw an error and exit upon either of the following conditions:
+    - User fails to specify input file
+    - Specified input file does not exist
+R2 If value is valid, respective .json mapping value shall be valid for the following:
+    - Name
+    - Birthday
+R3 Otherwise, null value shall not be mapped to any respective .json value.
+
+I1 Output .json format:
+    - "firstName": string
+    - "lastName": string
+    - "birthday": string
+    - "age": number
+    - "relatives": { "firstName": string, "lastName": string, "relationship": string }[]
+
+R4 Name shall be split up to "firstName" and "lastName"
+R5 Birthday shall be re-formatted from "M/DD/YYYY" to "YYYY-MM-DD"
+R6 Age shall be calculated according to the following logic - 
+    - If Person is alive, e.g. Person.Died === 'null', use Today.Date()
+    - Otherwise, use Person.Died
+R7 The following fields shall be mapped to "relatives" array according to I1
+    - Father
+    - Mother
+    - Brother
+    - Sister
+
